@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907194400_ArchivosAdjuntos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TareasMVC\\Migrations\\20250907194400_ArchivosAdjuntos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,28 @@
       "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\entidades\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907024734_Tareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TareasMVC\\Migrations\\20250907024734_Tareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\entidades\\archivoadjunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\entidades\\archivoadjunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907193915_Pasos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TareasMVC\\Migrations\\20250907193915_Pasos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\entidades\\paso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\entidades\\paso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907192806_TituloConfigurado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TareasMVC\\Migrations\\20250907192806_TituloConfigurado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\migrations\\20250907024734_tareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\migrations\\20250907024734_tareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +50,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250907194400_ArchivosAdjuntos.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907194400_ArchivosAdjuntos.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Migrations\\20250907194400_ArchivosAdjuntos.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907194400_ArchivosAdjuntos.cs",
+              "RelativeToolTip": "TareasMVC\\Migrations\\20250907194400_ArchivosAdjuntos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:44:01.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArchivoAdjunto.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Entidades\\ArchivoAdjunto.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Entidades\\ArchivoAdjunto.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Entidades\\ArchivoAdjunto.cs",
+              "RelativeToolTip": "TareasMVC\\Entidades\\ArchivoAdjunto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:41:23.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "20250907193915_Pasos.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907193915_Pasos.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Migrations\\20250907193915_Pasos.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907193915_Pasos.cs",
+              "RelativeToolTip": "TareasMVC\\Migrations\\20250907193915_Pasos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:39:15.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Paso.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Entidades\\Paso.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Entidades\\Paso.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Entidades\\Paso.cs",
+              "RelativeToolTip": "TareasMVC\\Entidades\\Paso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:34:40.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TareasMVC\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\appsettings.Development.json",
+              "RelativeToolTip": "TareasMVC\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-07T19:28:30.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250907192806_TituloConfigurado.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907192806_TituloConfigurado.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Migrations\\20250907192806_TituloConfigurado.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907192806_TituloConfigurado.cs",
+              "RelativeToolTip": "TareasMVC\\Migrations\\20250907192806_TituloConfigurado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:28:06.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Program.cs",
               "RelativeDocumentMoniker": "TareasMVC\\Program.cs",
@@ -47,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "20250907024734_Tareas.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Migrations\\20250907024734_Tareas.cs",
               "RelativeDocumentMoniker": "TareasMVC\\Migrations\\20250907024734_Tareas.cs",
@@ -60,26 +158,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "TareasMVC\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\appsettings.Development.json",
-              "RelativeToolTip": "TareasMVC\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-07T02:30:31.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "TareasMVC\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\ApplicationDbContext.cs",
               "RelativeToolTip": "TareasMVC\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T02:24:02.104Z",
               "EditorCaption": ""
@@ -92,7 +177,7 @@
               "RelativeDocumentMoniker": "TareasMVC\\Entidades\\Tarea.cs",
               "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Entidades\\Tarea.cs",
               "RelativeToolTip": "TareasMVC\\Entidades\\Tarea.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T02:22:16.097Z",
               "EditorCaption": ""
