@@ -166,3 +166,4 @@ C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\refint\TareasM
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.pdb
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.genruntimeconfig.cache
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\ref\TareasMVC.dll
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
