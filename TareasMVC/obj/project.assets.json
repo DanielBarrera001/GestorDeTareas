@@ -60,6 +60,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount/7.0.20": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/7.0.20": {
         "type": "package",
         "compile": {
@@ -1741,6 +1757,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount/7.0.20": {
+      "sha512": "svwxrKRZZVRkiFlaH+AOG65v/erAiQFaNGCmvBQiSNJzyNZiT05v7W3f4u3qzxEzjonRj68OoYUqVSCpNDJPCg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.microsoftaccount/7.0.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.xml",
+        "microsoft.aspnetcore.authentication.microsoftaccount.7.0.20.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.microsoftaccount.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/7.0.20": {
@@ -4889,6 +4920,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount >= 7.0.20",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.8"
@@ -4945,6 +4977,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.MicrosoftAccount": {
+            "target": "Package",
+            "version": "[7.0.20, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.20, )"

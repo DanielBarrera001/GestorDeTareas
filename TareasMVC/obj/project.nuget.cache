@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Rp58dfqvhBM=",
+  "dgSpecHash": "fXWMA2nmANA=",
   "success": true,
   "projectFilePath": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\TareasMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniel\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.authentication.microsoftaccount\\7.0.20\\microsoft.aspnetcore.authentication.microsoftaccount.7.0.20.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.20\\microsoft.aspnetcore.cryptography.internal.7.0.20.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.20\\microsoft.aspnetcore.cryptography.keyderivation.7.0.20.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.20\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.20.nupkg.sha512",
