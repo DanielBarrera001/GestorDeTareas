@@ -2,21 +2,25 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using TareasMVC.Models;
+using TareasMVC.Servicios;
 
 namespace TareasMVC.Controllers
 {
-    public class UsuariosController: Controller
+    public class UsuariosController : Controller
     {
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
+        private readonly ApplicationDbContext dbContext;
 
         public UsuariosController(UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager)
+            SignInManager<IdentityUser> signInManager, ApplicationDbContext dbContext)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
+            this.dbContext = dbContext;
         }
 
         [AllowAnonymous]
@@ -45,7 +49,7 @@ namespace TareasMVC.Controllers
             }
             else
             {
-                foreach(var error in resultado.Errors)
+                foreach (var error in resultado.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
@@ -57,7 +61,7 @@ namespace TareasMVC.Controllers
         [AllowAnonymous]
         public IActionResult Login(string mensaje = null)
         {
-            if(mensaje is not null)
+            if (mensaje is not null)
             {
                 ViewData["mensaje"] = mensaje;
             }
@@ -75,7 +79,7 @@ namespace TareasMVC.Controllers
             }
 
             var resultado = await signInManager.PasswordSignInAsync(modelo.Email,
-                modelo.Password,modelo.Recuerdame, lockoutOnFailure: false);
+                modelo.Password, modelo.Recuerdame, lockoutOnFailure: false);
 
             if (resultado.Succeeded)
             {
@@ -112,14 +116,14 @@ namespace TareasMVC.Controllers
 
             var mensaje = "";
 
-            if(remoteError is not null)
+            if (remoteError is not null)
             {
                 mensaje = $"Error del proveedor externo: {remoteError}";
                 return RedirectToAction("login", routeValues: new { mensaje });
             }
 
             var info = await signInManager.GetExternalLoginInfoAsync();
-            if(info is null)
+            if (info is null)
             {
                 mensaje = "Error cargando la data de login externo";
                 return RedirectToAction("login", routeValues: new { mensaje });
@@ -128,14 +132,14 @@ namespace TareasMVC.Controllers
             var resultadoLoginExterno = await signInManager.ExternalLoginSignInAsync(info.LoginProvider,
                 info.ProviderKey, isPersistent: true, bypassTwoFactor: true);
 
-            if(resultadoLoginExterno.Succeeded)
+            if (resultadoLoginExterno.Succeeded)
             {
                 return LocalRedirect(urlRetorno);
             }
 
             string email = "";
 
-            if(info.Principal.HasClaim(c => c.Type == ClaimTypes.Email))
+            if (info.Principal.HasClaim(c => c.Type == ClaimTypes.Email))
             {
                 email = info.Principal.FindFirstValue(ClaimTypes.Email);
             }
@@ -165,7 +169,55 @@ namespace TareasMVC.Controllers
 
             mensaje = "Ha ocurrido un error en el inicio de sesion";
             return RedirectToAction("login", routeValues: new { mensaje });
+        }
 
+        [HttpGet]
+        [Authorize(Roles =Constantes.RolAdmin)]
+        public async Task<IActionResult> Listado(string mensaje = null)
+        {
+            var usuarios = await dbContext.Users.Select(u => new UsuarioViewModel
+            {
+                Email = u.Email,
+            }).ToListAsync();
+
+            var modelo = new UsuariosListadoViewModel();
+            modelo.Usuarios = usuarios;
+            modelo.Mensaje = mensaje;
+            return View(modelo);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = Constantes.RolAdmin)]
+        public async Task<IActionResult> HacerAdmin(string email)
+        {
+            var usuario = await dbContext.Users.Where(u => u.Email == email).FirstOrDefaultAsync();
+
+            if (usuario is null)
+            {
+                return NotFound();
+            }
+
+            await userManager.AddToRoleAsync(usuario, Constantes.RolAdmin);
+
+            return RedirectToAction("Listado", 
+                routeValues: new { mensaje = "Rol asignado correctamente a " + email });
+        }
+
+        [HttpPost]
+        [Authorize(Roles = Constantes.RolAdmin)]
+        public async Task<IActionResult> RemoverAdmin(string email)
+        {
+            var usuario = await dbContext.Users.Where(u => u.Email == email).FirstOrDefaultAsync();
+
+            if (usuario is null)
+            {
+                return NotFound();
+            }
+
+            await userManager.RemoveFromRoleAsync(usuario, Constantes.RolAdmin);
+
+            return RedirectToAction("Listado",
+                routeValues: new { mensaje = "Rol removido correctamente a " + email });
         }
     }
 }
