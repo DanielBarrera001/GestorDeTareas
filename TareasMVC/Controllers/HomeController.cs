@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using TareasMVC.Models;
 
 namespace TareasMVC.Controllers
@@ -7,14 +8,17 @@ namespace TareasMVC.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IStringLocalizer<HomeController> localizer;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
         {
             _logger = logger;
+            this.localizer = localizer;
         }
 
         public IActionResult Index()
         {
+            ViewBag.Saludo = localizer["Buenos dias"];
             return View();
         }
 
