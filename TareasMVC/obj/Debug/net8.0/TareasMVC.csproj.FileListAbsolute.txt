@@ -168,3 +168,11 @@ C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.genr
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\ref\TareasMVC.dll
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\bin\Debug\net8.0\en\TareasMVC.resources.dll
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Controllers.HomeController.en.resources
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.csproj.GenerateResource.cache
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\en\TareasMVC.resources.dll
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Views.Home.Index.en.resources
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\bin\Debug\net8.0\es\TareasMVC.resources.dll
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Views.Home.Index.es.resources
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\es\TareasMVC.resources.dll
