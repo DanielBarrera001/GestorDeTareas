@@ -176,3 +176,7 @@ C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recu
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\bin\Debug\net8.0\es\TareasMVC.resources.dll
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Views.Home.Index.es.resources
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\es\TareasMVC.resources.dll
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.RecursoCompartido.en.resources
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.RecursoCompartido.es.resources
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Shared._TraduccionesJS.en.resources
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Shared._TraduccionesJS.es.resources

@@ -1,69 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\recursos\\views\\home\\index.en.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\recursos\\views\\home\\index.en.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\recursos\\views\\home\\index.es.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\recursos\\views\\home\\index.es.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "TareasMVC\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "TareasMVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-12T03:59:49.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.en.resx",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Recursos\\Views\\Home\\Index.en.resx",
-              "RelativeDocumentMoniker": "TareasMVC\\Recursos\\Views\\Home\\Index.en.resx",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Recursos\\Views\\Home\\Index.en.resx",
-              "RelativeToolTip": "TareasMVC\\Recursos\\Views\\Home\\Index.en.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-09-12T03:59:23.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.es.resx",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Recursos\\Views\\Home\\Index.es.resx",
-              "RelativeDocumentMoniker": "TareasMVC\\Recursos\\Views\\Home\\Index.es.resx",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Recursos\\Views\\Home\\Index.es.resx",
-              "RelativeToolTip": "TareasMVC\\Recursos\\Views\\Home\\Index.es.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-09-12T03:59:13.782Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

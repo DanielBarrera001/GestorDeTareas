@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Localization;
 using TareasMVC;
 using System.Globalization;
 using Microsoft.AspNetCore.Mvc.Razor;
+using TareasMVC.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +19,11 @@ var politicaUsuariosAutenticados = new AuthorizationPolicyBuilder()
 builder.Services.AddControllersWithViews(opciones =>
 {
     opciones.Filters.Add(new AuthorizeFilter(politicaUsuariosAutenticados));
-}).AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+}).AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization(opciones =>
+{
+    opciones.DataAnnotationLocalizerProvider = (_, factoria) => 
+        factoria.Create(typeof(RecursoCompartido));
+});
 
 builder.Services.AddDbContext<ApplicationDbContext>(opciones => 
 opciones.UseSqlServer("name=DefaultConnection"));
@@ -48,13 +53,11 @@ builder.Services.AddLocalization(opciones =>
 
 var app = builder.Build();
 
-var culturasUISoportadas = new[] { "es", "en" };
-
 app.UseRequestLocalization(opciones =>
 {
     opciones.DefaultRequestCulture = new RequestCulture("es");
-    opciones.SupportedUICultures = culturasUISoportadas
-    .Select(cultura => new CultureInfo(cultura)).ToList();
+    opciones.SupportedUICultures = Constantes.CulturasUISoportadas
+    .Select(cultura => new CultureInfo(cultura.Value)).ToList();
 });
 
 // Configure the HTTP request pipeline.
