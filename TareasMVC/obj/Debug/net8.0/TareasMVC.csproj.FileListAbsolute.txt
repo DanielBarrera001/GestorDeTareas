@@ -180,3 +180,7 @@ C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recu
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.RecursoCompartido.es.resources
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Shared._TraduccionesJS.en.resources
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\TareasMVC.Recursos.Shared._TraduccionesJS.es.resources
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
