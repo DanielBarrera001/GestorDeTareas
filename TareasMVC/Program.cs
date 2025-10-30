@@ -51,6 +51,8 @@ builder.Services.AddLocalization(opciones =>
     opciones.ResourcesPath = "Recursos";
 });
 
+builder.Services.AddTransient<IServiciosUsuarios, ServicioUsuarios>();
+
 var app = builder.Build();
 
 app.UseRequestLocalization(opciones =>

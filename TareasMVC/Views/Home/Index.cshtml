@@ -15,8 +15,13 @@
 <div id="contenedor-listado-tareas" class="text-center">
     <div class="text-start" data-bind="foreach: tareas">
         <div name="tarea" class="border mb-2 p-2" style="cursor: pointer">
-            <div data-bind="text: titulo" class="fw-bold">
+            <div data-bind="text: titulo, hidden: esNuevo" class="fw-bold">
             </div>
+
+            <input type="text" name="titulo-tarea" autocomplete="off"
+            data-bind="value: titulo, visible: esNuevo, 
+                event: {focusout: manejarFocusOutTituloTarea}" />
+
         </div>
     </div>
 
@@ -30,6 +35,9 @@
 </div>
 
 @section Scripts {
+
+    <script src="~/js/tareas.js" asp-append-version="true"></script> 
+
     <script>
         function tareaListadoViewModelFn() {
             var self = this;
@@ -45,11 +53,20 @@
              })
         }
 
-        tareaListadoViewModel = new tareaListadoViewModelFn();
+        function tareaElementoListadoViewModel({id, titulo}){
+            var self = this;
+            self.id = ko.observable(id);
+            self.titulo = ko.observable(titulo);
+            self.esNuevo = ko.pureComputed(function(){
+                return self.id() == 0;
+            })
+        }
+
+        const tareaListadoViewModel = new tareaListadoViewModelFn();
 
         setTimeout(()=>{
             tareaListadoViewModel.cargando(false)
-        }, 2000)
+        }, 100)
 
         ko.applyBindings(tareaListadoViewModel, document.getElementById('contenedor-listado-tareas'));
 
