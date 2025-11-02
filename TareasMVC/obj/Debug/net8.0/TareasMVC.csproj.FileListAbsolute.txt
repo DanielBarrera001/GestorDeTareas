@@ -184,3 +184,4 @@ C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rpswa.dswa.cac
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Daniel\source\repos\TareasMVC\TareasMVC\bin\Debug\net8.0\AutoMapper.dll
