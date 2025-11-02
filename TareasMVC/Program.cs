@@ -9,6 +9,7 @@ using System.Globalization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using TareasMVC.Servicios;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 var politicaUsuariosAutenticados = new AuthorizationPolicyBuilder()
@@ -52,6 +53,7 @@ builder.Services.AddLocalization(opciones =>
 });
 
 builder.Services.AddTransient<IServiciosUsuarios, ServicioUsuarios>();
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
