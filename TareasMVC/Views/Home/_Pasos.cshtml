@@ -1,0 +1,22 @@
+﻿<label><i class="bi bi-check-square"></i> Pasos de la tarea</label>
+<button class="btn btn-secondary btn-sm" onclick="manejarClickAgregarPaso()">
+    <i class="bi bi-plus"></i>
+</button>
+
+<div data-bind="foreach: pasos">
+    <div class="mt-2">
+        <div class="row">
+            <div class="col-1">
+                <input type="checkbox" class="form-check-input" name="chbPaso"
+                    data-bind="{checked: realizado}"
+                />
+            </div>
+            <div class="col-11">
+                <span data-bind="text: descripcion, hidden: modoEdicion"></span>
+                <textarea name="txtPasoDescripcion" class="form-control"
+                placeholder="Agregue una descripcion"
+                data-bind="{value: descripcion, visible: modoEdicion}"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
