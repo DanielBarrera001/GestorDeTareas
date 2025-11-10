@@ -55,6 +55,32 @@ namespace TareasMVC.Controllers
             await context.SaveChangesAsync();
 
             return paso;
+
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(Guid id, [FromBody] PasoCrearDTO pasoCrearDTO)
+        {
+            var usuarioId = serviciosUsuarios.ObtenerUsuarioId();
+
+            var paso = await context.Pasos.Include(p => p.Tarea).FirstOrDefaultAsync(p => p.Id == id);
+
+            if(paso is null)
+            {
+                return NotFound();
+            }
+
+            if(paso.Tarea.UsuarioCreacionId != usuarioId)
+            {
+                return Forbid();
+            }
+
+            paso.Descripcion = pasoCrearDTO.Descripcion;
+            paso.Realizado = pasoCrearDTO.Realizado;
+
+            await context.SaveChangesAsync();
+
+            return Ok();
         }
     }
 }
