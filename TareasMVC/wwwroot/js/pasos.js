@@ -11,7 +11,7 @@
 }
 
 function manejarClickCancelarPaso(paso) {
-    if (paso.esNuevo) {
+    if (paso.esNuevo()) {
         tareaEditarVM.pasos.pop();
     } else {
         paso.modoEdicion(false);
