@@ -54,6 +54,15 @@ async function insertarPaso(paso, data, idTarea) {
     if (respuesta.ok) {
         const json = await respuesta.json();
         paso.id(json.id);
+
+        const tarea = obtenerTareaEnEdicion();
+
+        tarea.pasosTotal(tarea.pasosTotal() + 1);
+
+        if (paso.realizado()) {
+            tarea.pasosRealizados(tarea.pasosRealizados() + 1);
+        }
+
     } else {
         manejarErrorApi(respuesta);
     }
@@ -85,3 +94,100 @@ async function actualizarPaso(data, id) {
         manejarErrorApi(respuesta);
     }
 }
+
+function manejarClickCheckboxPaso(paso) {
+    if (paso.esNuevo()) {
+        return true;
+    }
+
+    const data = obtenerCuerpoPeticionPaso(paso);
+    actualizarPaso(data, paso.id());
+
+    const tarea = obtenerTareaEnEdicion();
+
+    let pasosRealizadosActual = tarea.pasosRealizados();
+
+    if (paso.realizado()) {
+        pasosRealizadosActual++;
+    } else {
+        pasosRealizadosActual--;
+    }
+
+    tarea.pasosRealizados(pasosRealizadosActual);
+
+    return true;
+}
+
+function manejarClickBorrarPaso(paso) {
+    modalEditarTareaBootstrap.hide();
+    confirmarAccion({
+        callBackAceptar: () => {
+            borrarPaso(paso);
+            modalEditarTareaBootstrap
+                .show();
+        },
+        callBackCancelar: () => {
+            modalEditarTareaBootstrap.show();
+        },
+        titulo: `¿Desea borrar este paso?`
+    })
+}
+
+async function borrarPaso(paso) {
+    const respuesta = await fetch(`${urlPasos}/${paso.id()}`, {
+        method: 'DELETE'
+    });
+
+    if (!respuesta.ok) {
+        manejarErrorApi(respuesta);
+        return;
+    }
+
+    tareaEditarVM.pasos.remove(function (item) {return item.id() == paso.id() })
+
+    const tarea = obtenerTareaEnEdicion();
+    tarea.pasosTotal(tarea.pasosTotal() - 1);
+
+    if (paso.realizado()) {
+        tarea.pasosRealizados(tarea.pasosRealizados() - 1);
+    }
+
+}
+
+async function actualizarOrdenPasos() {
+    const ids = obtenerIdsPasos();
+    await enviarIdsPasosAlBackend(ids);
+
+    const arregloOrganizado = tareaEditarVM.pasos.sorted(function (a, b) {
+        return ids.indexOf(a.id().toString()) - ids.indexOf(b.id().toString());
+    })
+
+    tareaEditarVM.pasos(arregloOrganizado);
+}
+
+function obtenerIdsPasos() {
+    const ids = $("[name=chbPaso]").map(function () {
+        return $(this).attr('data-id')
+    }).get();
+    return ids;
+}
+
+async function enviarIdsPasosAlBackend(ids) {
+    var data = JSON.stringify(ids);
+    await fetch(`${urlPasos}/ordenar/${tareaEditarVM.id}`, {
+        method: 'POST',
+        body: data,
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+}
+
+$(function () {
+    $("#reordenable-pasos").sortable({
+        axis: 'y',
+        stop: async function () {
+            await actualizarOrdenPasos();
+        }
+    })
+})

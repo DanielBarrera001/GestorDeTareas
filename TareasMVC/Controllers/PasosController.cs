@@ -82,5 +82,65 @@ namespace TareasMVC.Controllers
 
             return Ok();
         }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(Guid id)
+        {
+            var usuarioId = serviciosUsuarios.ObtenerUsuarioId();
+
+            var paso = await context.Pasos.Include(p => p.Tarea).FirstOrDefaultAsync(t => t.Id == id);
+
+            if(paso is null)
+            {
+                return NotFound();
+            }
+
+            if (paso.Tarea.UsuarioCreacionId != usuarioId)
+            {
+                return Forbid();
+            }
+
+            context.Remove(paso);
+            await context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPost("ordenar/{tareaId:int}")]
+        public async Task<IActionResult> Ordenar(int tareaId, [FromBody] Guid[] ids)
+        {
+            var usuarioId = serviciosUsuarios.ObtenerUsuarioId();
+
+            var tarea = await context.Tareas.FirstOrDefaultAsync(t => t.Id == tareaId &&
+            t.UsuarioCreacionId == usuarioId);
+
+            if (tarea is null)
+            {
+                return NotFound();
+            }
+
+            var pasos = await context.Pasos.Where(x => x.TareaId == tareaId).ToListAsync();
+
+            var pasosIds = pasos.Select(x => x.Id);
+
+            var idsPasosNoPertenecenALaTarea = ids.Except(pasosIds).ToList();
+
+            if(idsPasosNoPertenecenALaTarea.Any())
+            {
+                return BadRequest("No todos los pasos están presentes");
+            }
+
+            var pasosDiccionario = pasos.ToDictionary(p => p.Id);
+
+            for(int i = 0; i< ids.Length; i++)
+            {
+                var pasoId = ids [i];
+                var paso = pasosDiccionario[pasoId];
+                paso.Orden = i + 1;
+            }
+
+             await context.SaveChangesAsync();
+            return Ok();
+        }
     }
 }
