@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\controllers\\pasoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\controllers\\pasoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\wwwroot\\js\\pasos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\wwwroot\\js\\pasos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\views\\home\\_pasos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\views\\home\\_pasos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\servicios\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\servicios\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\models\\tareadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\models\\tareadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\wwwroot\\js\\tareas.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\wwwroot\\js\\tareas.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\wwwroot\\js\\archivos-adjuntos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\wwwroot\\js\\archivos-adjuntos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\views\\home\\_archivosadjuntos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\views\\home\\_archivosadjuntos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\controllers\\archivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\controllers\\archivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\servicios\\almacenadorarchivoslocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\servicios\\almacenadorarchivoslocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\servicios\\ialmacenadorarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\servicios\\ialmacenadorarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|c:\\users\\daniel\\source\\repos\\tareasmvc\\tareasmvc\\models\\almacenararchivoresultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C0EB09-734A-46C4-A686-CF6B4A9E0504}|TareasMVC\\TareasMVC.csproj|solutionrelative:tareasmvc\\models\\almacenararchivoresultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,106 +54,132 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PasosController.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\PasosController.cs",
-              "RelativeDocumentMoniker": "TareasMVC\\Controllers\\PasosController.cs",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\PasosController.cs",
-              "RelativeToolTip": "TareasMVC\\Controllers\\PasosController.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T04:19:04.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Servicios\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "TareasMVC\\Servicios\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Servicios\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "TareasMVC\\Servicios\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:45:19.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TareaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Models\\TareaDTO.cs",
-              "RelativeDocumentMoniker": "TareasMVC\\Models\\TareaDTO.cs",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Models\\TareaDTO.cs",
-              "RelativeToolTip": "TareasMVC\\Models\\TareaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:43:59.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "pasos.js",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\pasos.js",
-              "RelativeDocumentMoniker": "TareasMVC\\wwwroot\\js\\pasos.js",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\pasos.js",
-              "RelativeToolTip": "TareasMVC\\wwwroot\\js\\pasos.js",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAcwKQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-10T04:12:20.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TareasController.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\TareasController.cs",
-              "RelativeDocumentMoniker": "TareasMVC\\Controllers\\TareasController.cs",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\TareasController.cs",
-              "RelativeToolTip": "TareasMVC\\Controllers\\TareasController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwCwAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:43:54.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Pasos.cshtml",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\_Pasos.cshtml",
-              "RelativeDocumentMoniker": "TareasMVC\\Views\\Home\\_Pasos.cshtml",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\_Pasos.cshtml",
-              "RelativeToolTip": "TareasMVC\\Views\\Home\\_Pasos.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T04:10:07.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "tareas.js",
-              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\tareas.js",
-              "RelativeDocumentMoniker": "TareasMVC\\wwwroot\\js\\tareas.js",
-              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\tareas.js",
-              "RelativeToolTip": "TareasMVC\\wwwroot\\js\\tareas.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-11T22:18:38.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "TareasMVC\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "TareasMVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAIIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T04:14:13.369Z",
+              "WhenOpened": "2025-11-12T00:31:23.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TareasController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\TareasController.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Controllers\\TareasController.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\TareasController.cs",
+              "RelativeToolTip": "TareasMVC\\Controllers\\TareasController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA5wDsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:30:19.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ArchivosAdjuntos.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\_ArchivosAdjuntos.cshtml",
+              "RelativeDocumentMoniker": "TareasMVC\\Views\\Home\\_ArchivosAdjuntos.cshtml",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Views\\Home\\_ArchivosAdjuntos.cshtml",
+              "RelativeToolTip": "TareasMVC\\Views\\Home\\_ArchivosAdjuntos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T23:48:54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "archivos-adjuntos.js",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\archivos-adjuntos.js",
+              "RelativeDocumentMoniker": "TareasMVC\\wwwroot\\js\\archivos-adjuntos.js",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\archivos-adjuntos.js",
+              "RelativeToolTip": "TareasMVC\\wwwroot\\js\\archivos-adjuntos.js",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-11T23:48:43.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tareas.js",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\tareas.js",
+              "RelativeDocumentMoniker": "TareasMVC\\wwwroot\\js\\tareas.js",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\wwwroot\\js\\tareas.js",
+              "RelativeToolTip": "TareasMVC\\wwwroot\\js\\tareas.js",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAuwHUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-12T00:49:12.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArchivosController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\ArchivosController.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Controllers\\ArchivosController.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Controllers\\ArchivosController.cs",
+              "RelativeToolTip": "TareasMVC\\Controllers\\ArchivosController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAEIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T23:51:23.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Program.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Program.cs",
+              "RelativeToolTip": "TareasMVC\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADwAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:13:43.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlmacenadorArchivosLocal.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "RelativeToolTip": "TareasMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAqwEUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:03:49.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AlmacenarArchivoResultado.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Models\\AlmacenarArchivoResultado.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Models\\AlmacenarArchivoResultado.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Models\\AlmacenarArchivoResultado.cs",
+              "RelativeToolTip": "TareasMVC\\Models\\AlmacenarArchivoResultado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T23:49:51.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAlmacenadorArchivos.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "RelativeDocumentMoniker": "TareasMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\TareasMVC\\TareasMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "RelativeToolTip": "TareasMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T23:49:13.432Z",
               "EditorCaption": ""
             }
           ]
