@@ -44,3 +44,68 @@ function prepararArchivosAdjuntos(archivosAdjuntos) {
             new archivoAdjuntoViewModel({ ...archivoAdjunto, modoEdicion: false }));
     });
 }
+
+let tituloArchivoAdjuntoAnterior;
+function manejarClickTituloArchivoAdjunto(archivoAdjunto) {
+    archivoAdjunto.modoEdicion(true);
+    tituloArchivoAdjuntoAnterior = archivoAdjunto.titulo();
+    $("[name='txtArchivoAdjuntoTitulo']:visible").focus();
+}
+
+async function manejarFocusOutArchivoAdjunto(archivoAdjunto) {
+    archivoAdjunto.modoEdicion(false);
+    const idTarea = archivoAdjunto.id;
+
+    if (!archivoAdjunto.titulo()) {
+        archivoAdjunto.titulo(tituloArchivoAdjuntoAnterior);
+    }
+
+    if (archivoAdjunto.titulo() === tituloArchivoAdjuntoAnterior) {
+        return;
+    }
+
+    const data = JSON.stringify(archivoAdjunto.titulo());
+
+    const respuesta = await fetch(`${urlArchivos}/${idTarea}`, {
+        body: data,
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+
+    if (!respuesta.ok) {
+        manejarErrorApi(respuesta);
+    }
+}
+
+function manejarClickBorrarArchivoAdjunto(archivoAdjunto) {
+    modalEditarTareaBootstrap.hide();
+
+    confirmarAccion({
+        callBackAceptar: () => {
+            borrarArchivoAdjunto(archivoAdjunto);
+            modalEditarTareaBootstrap.show();
+        },
+        callBackCancelar: () => {
+            modalEditarTareaBootstrap.show();
+        }, titulo: '¿Desea borrar este archivo adjunto?'
+    });
+}
+
+async function borrarArchivoAdjunto(archivoAdjunto) {
+    const respuesta = await fetch(`${urlArchivos}/${archivoAdjunto.id}`, {
+        method: 'DELETE'
+    });
+
+    if (!respuesta.ok) {
+        manejarErrorApi(respuesta);
+        return;
+    }
+
+    tareaEditarVM.archivosAdjuntos.remove(function (item) { return item.id == archivoAdjunto.id });
+}
+
+function manejarClickDescargarArchivoAdjunto(archivoAdjunto) {
+    descargarArchivo(archivoAdjunto.url, archivoAdjunto.titulo());
+}

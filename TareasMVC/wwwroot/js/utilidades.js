@@ -37,3 +37,14 @@ function confirmarAccion({ callBackAceptar, callBackCancelar, titulo }) {
         }
     })
 }
+
+function descargarArchivo(url, nombre) {
+    var link = document.createElement('a');
+    link.download = nombre;
+    link.target = "_blank";
+    link.href = url;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    delete link; 
+}

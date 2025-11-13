@@ -1,9 +1,9 @@
 wwwroot\archivosadjuntos\166fb514-f276-4575-9035-e296c5d8baa7.jpg
-wwwroot\archivosadjuntos\dd5f3469-c035-4f7a-9bad-111cdc63c627.png
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\pasos.js
 wwwroot\js\site.js
+wwwroot\js\tareas.js
 wwwroot\js\utilidades.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -82,4 +82,3 @@ wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\js\archivos-adjuntos.js
-wwwroot\js\tareas.js
