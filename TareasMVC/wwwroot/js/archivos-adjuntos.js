@@ -107,5 +107,11 @@ async function borrarArchivoAdjunto(archivoAdjunto) {
 }
 
 function manejarClickDescargarArchivoAdjunto(archivoAdjunto) {
-    descargarArchivo(archivoAdjunto.url, archivoAdjunto.titulo());
+    const urlArchivo = archivoAdjunto.url;
+    const nombreArchivo = archivoAdjunto.titulo();
+
+    // 💡 Paso Clave: Muestra la URL en la consola.
+    console.log("URL a descargar:", urlArchivo);
+
+    descargarArchivo(urlArchivo, nombreArchivo);
 }

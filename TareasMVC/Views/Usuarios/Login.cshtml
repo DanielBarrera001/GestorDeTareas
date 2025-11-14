@@ -4,48 +4,67 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-5">
 
-@if (ViewData.Keys.Contains("mensaje"))
-{
-    <p style="color: red">
-        @ViewData["mensaje"]
-    </p>
-}
+            <h1 class="text-center mb-4 text-primary">Iniciar Sesión</h1>
 
-<div class="card">
-    <div class="card-body">
-        <form asp-action="Login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (ViewData.Keys.Contains("mensaje"))
+            {
+                <div class="alert alert-danger text-center mb-4" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData["mensaje"]
+                </div>
+            }
 
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" class="form-control"/>
-                <span asp-validation-for="Email" class="text-danger"></span>
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4 p-md-5">
+
+                    <form asp-action="Login">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label fw-semibold"></label>
+                            <input asp-for="Email" class="form-control form-control-lg" placeholder="ejemplo@correo.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Password" class="form-label fw-semibold"></label>
+                            <input asp-for="Password" class="form-control form-control-lg" placeholder="Ingresa tu contraseña" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" asp-for="Recuerdame" />
+                            <label class="form-check-label" asp-for="Recuerdame"></label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+                            <i class="bi bi-box-arrow-in-right me-2"></i> Iniciar sesión
+                        </button>
+
+                        <hr class="my-4" />
+
+                        <div class="d-grid gap-2">
+                            <a class="btn btn-outline-success" asp-action="registro">
+                                <i class="bi bi-person-plus-fill me-2"></i> Crear una nueva cuenta
+                            </a>
+
+                            <a class="btn btn-light border" asp-action="LoginExterno" asp-route-proveedor="Microsoft">
+                                <img src="~/images/microsoft_logo.png" alt="Microsoft Logo" style="height: 1.2rem; margin-right: 0.5rem;" />
+                                Ingresar con Microsoft
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" asp-for="Recuerdame"/>
-                <label class="form-check-label" asp-for="Recuerdame"></label>
-            </div>
-
-            <button class="btn-primary">Iniciar sesión</button>
-            <a class="btn btn-success" asp-action="registro">Crear una nueva cuenta</a>
-        
-            <a class="btn btn-success" asp-action="LoginExterno" asp-route-proveedor="Microsoft">
-                Ingresar con Microsoft
-            </a>
-        </form>
+            
+        </div>
     </div>
-
 </div>
 
-@section Scripts{
+@section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

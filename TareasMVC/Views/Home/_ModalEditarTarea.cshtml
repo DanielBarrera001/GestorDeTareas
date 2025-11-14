@@ -1,41 +1,70 @@
 ﻿<div class="modal fade" id="modal-editar-tarea" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modal-editar-tarea-titulo" data-bind="text: titulo"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+            <div class="modal-header bg-light border-bottom">
+                <h3 class="modal-title fw-bold text-primary" id="modal-editar-tarea-titulo" data-bind="text: titulo"></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-            <div class="modal-body">
+
+            <div class="modal-body p-4">
                 <div class="row">
-                    <div class="col-lg-9">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="txtTituloCrearTarea"
-                            placeholder="titulo" data-bind="value: titulo,
-                            event:{change: manejarCambioEditarTarea}"/>
-                            <label for="txtTituloCrearTarea">Titulo de la tarea</label>
+
+                    <div class="col-lg-9 pe-lg-4 border-end">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control form-control-lg" id="txtTituloCrearTarea"
+                                   placeholder="Título de la tarea" data-bind="value: titulo,
+                            event:{change: manejarCambioEditarTarea}" />
+                            <label for="txtTituloCrearTarea">Título de la tarea</label>
                         </div>
-                        <div class="mb-3">
-                            <label>Descripcion</label>
-                            <textarea type="text" class="form-control" rows="4" data-bind="value: descripcion
-                            ,event:{change: manejarCambioEditarTarea}"></textarea>
+
+                        <h4 class="mb-2 text-secondary"><i class="bi bi-card-text me-2"></i> Descripción</h4>
+                        <div class="mb-4">
+                            <textarea type="text" class="form-control" rows="5" placeholder="Agrega una descripción detallada de la tarea..."
+                                      data-bind="value: descripcion, event:{change: manejarCambioEditarTarea}"></textarea>
                         </div>
-                        <div class="mb-3">
+
+                        <hr class="my-4" />
+
+                        <h4 class="mb-3 text-secondary"><i class="bi bi-list-task me-2"></i> Subtareas/Pasos</h4>
+                        <div class="mb-4">
                             <partial name="_Pasos" />
                         </div>
+
+                        <hr class="my-4" />
+
+                        <h4 class="mb-3 text-secondary"><i class="bi bi-paperclip me-2"></i> Archivos Adjuntos</h4>
                         <div class="mb-3">
                             <partial name="_ArchivosAdjuntos" />
                         </div>
+
                     </div>
-                    <div class="col-lg-3">
+
+                    <div class="col-lg-3 ps-lg-4">
+
+                        <h5 class="text-uppercase text-muted mb-3">Acciones</h5>
+
                         <button data-bind="{click: intentarBorrarTarea}"
-                            class="btn btn-secondary mb-2 w-100 text-start">
-                            <i class="bi bi-x-lg"></i>>
-                            Borrar tarea
+                                class="btn btn-danger mb-3 w-100 text-start">
+                            <i class="bi bi-trash-fill me-2"></i> Borrar tarea
                         </button>
+
+                        <button type="button" class="btn btn-outline-secondary w-100 text-start" data-bs-dismiss="modal">
+                            <i class="bi bi-check-circle-fill me-2"></i> Cerrar/Guardar
+                        </button>
+
+                        <hr class="my-4" />
+
+                        <h5 class="text-uppercase text-muted mb-3">Metadatos</h5>
+                        <p class="text-muted small">
+                            ID: <span data-bind="text: id"></span>
+                        </p>
+
                     </div>
 
                 </div>
             </div>
+
         </div>
     </div>
 </div>

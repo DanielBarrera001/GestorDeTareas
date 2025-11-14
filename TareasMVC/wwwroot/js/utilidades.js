@@ -39,6 +39,7 @@ function confirmarAccion({ callBackAceptar, callBackCancelar, titulo }) {
 }
 
 function descargarArchivo(url, nombre) {
+    console.log("Intentando descargar la URL:", url); 
     var link = document.createElement('a');
     link.download = nombre;
     link.target = "_blank";

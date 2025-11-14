@@ -4,35 +4,54 @@
     ViewData["Title"] = "Registro";
 }
 
-<h1>Registrate</h1>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-5">
 
-<div class="card">
-    <div class="card-body">
-        <form asp-action="Registro">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h1 class="text-center mb-4 text-primary">Crea tu Cuenta</h1>
 
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" class="form-control"/>
-                <span asp-validation-for="Email" class="text-danger"></span>
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4 p-md-5">
+
+                    <form asp-action="Registro">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label fw-semibold"></label>
+                            <input asp-for="Email" class="form-control form-control-lg" placeholder="ejemplo@correo.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Password" class="form-label fw-semibold"></label>
+                            <input asp-for="Password" class="form-control form-control-lg" placeholder="Crea una contraseña segura" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+                            <i class="bi bi-person-plus-fill me-2"></i> Registrarse
+                        </button>
+
+                        <hr class="my-4" />
+
+                        <div class="d-grid gap-2">
+
+                            <a class="btn btn-outline-secondary" asp-action="login">
+                                <i class="bi bi-box-arrow-in-right me-2"></i> Ya tengo cuenta, Ingresar
+                            </a>
+
+                            <a class="btn btn-light border" asp-action="LoginExterno" asp-route-proveedor="Microsoft">
+                                <img src="~/images/microsoft_logo.png" alt="Microsoft Logo" style="height: 1.2rem; margin-right: 0.5rem;" />
+                                Ingresar con Microsoft
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-
-            <button class="btn btn-primary">Registrate</button>
-            <a class="btn btn-success" asp-action="login">Ingresar</a>
-
-            <a class="btn btn-success" asp-action="LoginExterno" asp-route-proveedor="Microsoft">
-                Ingresar con Microsoft
-            </a>
-        </form>
+        </div>
     </div>
 </div>
 
-@section Scripts{
+@section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

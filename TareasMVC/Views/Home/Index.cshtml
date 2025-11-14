@@ -5,41 +5,68 @@
     ViewData["Title"] = "Listado de tareas";
 }
 
-<div class="text-center">
-    <h1 class="display-4">@localizer["Mis tareas"]</h1>
-    <button type="button" class="btn btn-primary mb-3" onclick="agregarNuevaTareaListado()">
-        @localizer["Agregar nueva tarea"]
-        </button>
+<div class="text-center mb-4">
+    <h1 class="h2 text-primary">@localizer["Mis tareas"]</h1>
+
+    <button type="button" class="btn btn-primary mt-3 btn-lg" onclick="agregarNuevaTareaListado()">
+        <i class="bi bi-plus-circle me-2"></i> 
+        @localizer["AgregarNuevaTarea"]
+    </button>
 </div>
 
-<div id="contenedor-listado-tareas" class="text-center">
+<div id="contenedor-listado-tareas" class="container-md mx-auto">
+
     <div id="reordenable" class="text-start" data-bind="foreach: tareas">
-        <div name="tarea" class="border mb-2 p-2" style="cursor: pointer"
-        data-bind="click: manejarClickTarea">
-            <div data-bind="text: titulo, hidden: esNuevo" class="fw-bold">
+
+        <div name="tarea"
+             class="card mb-3 shadow-sm task-card-hover"
+             style="cursor: pointer"
+             data-bind="click: manejarClickTarea, css: {'border-success border-2': pasosTotal() > 0 && pasosRealizados() === pasosTotal() }">
+
+            <div class="card-body p-3 d-flex justify-content-between align-items-center">
+
+                <div class="flex-grow-1 me-3">
+
+                    <div data-bind="text: titulo, hidden: esNuevo"
+                         class="fw-bold fs-5 text-truncate">
+                    </div>
+
+                    <input type="text" name="titulo-tarea" autocomplete="off"
+                           class="form-control"
+                           data-bind="value: titulo, visible: esNuevo,
+                                      attr:{'data-id': id},
+                                      event: {focusout: manejarFocusOutTituloTarea}" />
+                </div>
+
+                <div name="pasos-resumen" class="text-end flex-shrink-0"
+                     data-bind="visible: pasosTotal() > 0">
+
+                    <div class="progress mb-1" style="width: 100px; height: 8px;">
+                        <div class="progress-bar progress-bar-striped" role="progressbar"
+                             data-bind="style: { width: porcentajeCompletadoSinParentesis, backgroundColor: pasosRealizados() === pasosTotal() ? '#28a745' : '' }"
+                             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+
+                    <small class="text-muted fw-semibold">
+                        <span data-bind="text: pasosRealizados"></span>
+                        /
+                        <span data-bind="text: pasosTotal"></span>
+                        <span data-bind="text: porcentajeCompletado"></span>
+                    </small>
+                </div>
             </div>
-
-            <div name="pasos-resumen" data-bind="visible: pasosTotal() > 0">
-                <span data-bind="text: pasosRealizados"></span>
-                /
-                <span data-bind="text: pasosTotal"></span>
-                <span data-bind="text: porcentajeCompletado"></span>
-            </div>
-
-            <input type="text" name="titulo-tarea" autocomplete="off"
-            data-bind="value: titulo, visible: esNuevo, 
-                attr:{'data-id': id},
-                event: {focusout: manejarFocusOutTituloTarea}" />
-
         </div>
     </div>
 
-    <div data-bind="visible: cargando" class="spinner-border">
-        <span class="visually-hidden">Cargando...</span>
+    <div data-bind="visible: cargando" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">@localizer["Cargando..."]</span>
+        </div>
     </div>
 
-    <div data-bind="visible: noHayTareas">
-        No existen tareas para mostrar
+    <div data-bind="visible: noHayTareas" class="alert alert-info mt-4 text-center">
+        <i class="bi bi-info-circle-fill me-2"></i> @localizer["No existen tareas para mostrar"]
     </div>
 </div>
 
@@ -65,15 +92,14 @@
         function tareaListadoViewModelFn() {
             var self = this;
             self.tareas = ko.observableArray([]);
-             self.cargando = ko.observable(true);
+            self.cargando = ko.observable(true);
 
-             self.noHayTareas = ko.pureComputed(function(){
-                 if(self.cargando()){
-                     return false;
-                 }
-
-                 return self.tareas().length === 0;
-             })
+            self.noHayTareas = ko.pureComputed(function(){
+                if(self.cargando()){
+                    return false;
+                }
+                return self.tareas().length === 0;
+            })
         }
 
         function tareaElementoListadoViewModel({id, titulo, pasosTotal, pasosRealizados}){
@@ -88,10 +114,18 @@
                 return self.id() == 0;
             })
 
+            // Computed original (para texto: (X%))
             self.porcentajeCompletado = ko.pureComputed(function(){
-                const calculo = Math.round(self.pasosRealizados() * 1.0 / self.pasosTotal() * 100);
-
+                // Asegura que no divida por cero
+                const calculo = self.pasosTotal() === 0 ? 0 : Math.round(self.pasosRealizados() * 1.0 / self.pasosTotal() * 100);
                 return `(${calculo}%)`;
+            });
+
+            // **CORRECCIÓN VISUAL:** Necesario para el atributo 'width' de la barra de progreso de Bootstrap
+            self.porcentajeCompletadoSinParentesis = ko.pureComputed(function(){
+                // Asegura que no divida por cero
+                const calculo = self.pasosTotal() === 0 ? 0 : Math.round(self.pasosRealizados() * 1.0 / self.pasosTotal() * 100);
+                return `${calculo}%`;
             });
         }
 

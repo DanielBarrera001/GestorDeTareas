@@ -1,19 +1,43 @@
-﻿<label><i class="bi bi-paperclip"></i>Archivos adjuntos</label>
-<button class="btn btn-secondary btn-sm" onclick="manejarClickAgregarArchivoAdjunto()"><i class="bi bi-plus"></i></button>
-<input type="file" onchange="manejarSeleccionArchivoTarea(event)" id="archivoATarea" multiple style="display: none"/>
+﻿<div class="d-flex justify-content-between align-items-center mb-3">
+    <h5 class="mb-0 text-secondary fw-semibold">Lista de Archivos</h5>
 
-<div data-bind="foreach: archivosAdjuntos">
-    <div>
-        <div style="cursor: pointer" class="fw-bold" data-bind="text: titulo, hidden: modoEdicion, click: manejarClickTituloArchivoAdjunto"></div>
+    <button class="btn btn-primary btn-sm" onclick="manejarClickAgregarArchivoAdjunto()">
+        <i class="bi bi-cloud-arrow-up-fill me-1"></i> Adjuntar archivo
+    </button>
 
-        <div data-bind="visible: modoEdicion, event:{focusout: manejarFocusOutArchivoAdjunto}">
-            <input name="txtArchivoAdjuntoTitulo" type="text" class="form-control" data-bind="value: titulo, attr:{'data-id':id}"/>
+    <input type="file" onchange="manejarSeleccionArchivoTarea(event)" id="archivoATarea" multiple style="display: none" />
+</div>
+
+<div class="list-group" data-bind="foreach: archivosAdjuntos">
+
+    <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+
+        <div class="flex-grow-1 me-3">
+
+            <div style="cursor: pointer" class="fw-bold text-truncate"
+                 data-bind="text: titulo, hidden: modoEdicion, click: manejarClickTituloArchivoAdjunto">
+                <i class="bi bi-file-earmark-text me-1 text-muted"></i>
+            </div>
+
+            <div data-bind="visible: modoEdicion, event:{focusout: manejarFocusOutArchivoAdjunto}">
+                <input name="txtArchivoAdjuntoTitulo" type="text" class="form-control form-control-sm"
+                       data-bind="value: titulo, attr:{'data-id':id}" />
+            </div>
+
+            <small class="text-muted d-block">Agregado: <span data-bind="text:publicado"></span></small>
         </div>
 
-        <div>
-            Agregado<span data-bind="text:publicado"></span>
-            <span class="fw-bold" style="cursor: pointer" data-bind="click: manejarClickBorrarArchivoAdjunto">Borrar</span>
-            <span class="fw-bold" style="cursor: pointer" data-bind="click: manejarClickDescargarArchivoAdjunto">Descargar</span>
+        <div class="d-flex flex-shrink-0">
+
+            <a class="btn btn-outline-secondary btn-sm me-2" style="cursor: pointer"
+               data-bind="click: manejarClickDescargarArchivoAdjunto" title="Descargar archivo">
+                <i class="bi bi-cloud-arrow-down-fill"></i>
+            </a>
+
+            <button class="btn btn-outline-danger btn-sm" style="cursor: pointer"
+                    data-bind="click: manejarClickBorrarArchivoAdjunto" title="Eliminar archivo">
+                <i class="bi bi-trash-fill"></i>
+            </button>
         </div>
     </div>
 </div>

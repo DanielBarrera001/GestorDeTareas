@@ -1,6 +1,11 @@
-wwwroot\archivosadjuntos\166fb514-f276-4575-9035-e296c5d8baa7.jpg
+wwwroot\archivosadjuntos\19ebe640-3f52-4480-9956-0e0dc6176d9f.jpg
+wwwroot\archivosadjuntos\b92d9545-6dc1-41c6-a51c-0c1074c337ad.pdf
+wwwroot\archivosadjuntos\c3c656f4-d420-4401-b645-ed35cd3f61ed.jpg
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\fondo.png
+wwwroot\images\microsoft_logo.png
+wwwroot\js\archivos-adjuntos.js
 wwwroot\js\pasos.js
 wwwroot\js\site.js
 wwwroot\js\tareas.js
@@ -81,4 +86,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\js\archivos-adjuntos.js

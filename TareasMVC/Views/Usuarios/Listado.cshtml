@@ -5,50 +5,63 @@
     Layout = "../shared/_layout";
 }
 
-<h1>Listado de usuarios</h1>
+<div class="container-fluid py-4">
 
-@if(Model.Mensaje is not null)
-{
-    <div class="alert alert-success" role="alert">
-        @Model.Mensaje
-    </div>
-}
+    <h1 class="mb-4 text-secondary"><i class="bi bi-people-fill me-3"></i> Gestión de Usuarios</h1>
 
-@if(Model.Usuarios is not null)
-{
-    <form method="post">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <td>Accion</td>
-                    <td>Email</td>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var usuario in Model.Usuarios)
-                {
-                    <tr>
-                        <td>
-                            <button 
-                                class="btn btn-primary me-2"
-                                asp-action="HacerAdmin" asp-route-email="@usuario.Email">Hacer Admin</button>
-                            
-                            <button class="btn btn-secondary me-2"
-                                    asp-action="RemoverAdmin" asp-route-email="@usuario.Email">
-                                Remover Admin
-                            </button>
+    @if (Model.Mensaje is not null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i> @Model.Mensaje
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
 
-                        </td>
-                        <td>
-                            @usuario.Email
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </form>
-}
-else
-{
-    <p>No hay usuarios a mostrar</p>
-}
+    @if (Model.Usuarios is not null)
+    {
+        <form method="post">
+            <div class="table-responsive shadow-sm">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 250px;">Acciones</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var usuario in Model.Usuarios)
+                        {
+                            <tr>
+                                <td>
+                                    <button type="submit"
+                                            class="btn btn-sm btn-outline-primary me-2"
+                                            asp-action="HacerAdmin"
+                                            asp-route-email="@usuario.Email">
+                                        <i class="bi bi-person-fill-up me-1"></i> Hacer Admin
+                                    </button>
+
+                                    <button type="submit"
+                                            class="btn btn-sm btn-outline-danger"
+                                            asp-action="RemoverAdmin"
+                                            asp-route-email="@usuario.Email">
+                                        <i class="bi bi-person-fill-down me-1"></i> Remover Admin
+                                    </button>
+                                </td>
+                                <td class="fw-semibold">
+                                    @usuario.Email
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    }
+    else
+    {
+        <div class="alert alert-info mt-3 text-center">
+            <i class="bi bi-info-circle-fill me-2"></i> No hay usuarios a mostrar en la lista.
+        </div>
+    }
+
+</div>

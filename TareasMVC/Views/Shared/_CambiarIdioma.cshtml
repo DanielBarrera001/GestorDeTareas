@@ -9,14 +9,21 @@
 }
 
 <form asp-controller="Home" asp-action="CambiarIdioma"
-    asp-route-urlRetorno="@urlRetorno" method="post" class="form-horizontal"
-    role="form" style="display: inline">
-    
-    <label>@localizer["Idioma:"]</label>
+      asp-route-urlRetorno="@urlRetorno" method="post"
+      role="form" class="d-flex align-items-center mb-0">
 
-    <select name="cultura" asp-for="@requestCulture.RequestCulture.UICulture.Name" 
-    id="cultura" onchange="this.form.submit()"
-    asp-items="Constantes.CulturasUISoportadas"> 
-    </select>
+    <div class="input-group input-group-sm">
+
+        <span class="input-group-text border-0">
+            <i class="bi bi-globe"></i>
+            <span class="ms-2 d-none d-sm-inline">@localizer["Idioma:"]</span>
+        </span>
+
+        <select name="cultura" asp-for="@requestCulture.RequestCulture.UICulture.Name"
+                id="cultura" onchange="this.form.submit()"
+                asp-items="Constantes.CulturasUISoportadas"
+                class="form-select form-select-sm" style="width: auto;">
+        </select>
+    </div>
 
 </form>
